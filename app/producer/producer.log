@@ -1,0 +1,13 @@
+{"level":"info","Time":"2024-08-05T10:53:52.162+0700","caller":"producer/main.go:203","msg":"Starting server on :8080"}
+{"level":"info","Time":"2024-08-05T10:54:37.944+0700","caller":"producer/main.go:133","msg":"Decoded request data","data":{"name":"Product 1","expired":"2026-01-15","brand":"BrandA"}}
+{"level":"info","Time":"2024-08-05T10:54:38.971+0700","caller":"producer/main.go:104","msg":"Message sent to Kafka","message":"{\"operation\":\"CREATE\",\"data\":{\"name\":\"Product 1\",\"expired\":\"2026-01-15\",\"brand\":\"BrandA\"}}"}
+{"level":"info","Time":"2024-08-05T10:54:38.972+0700","caller":"producer/main.go:144","msg":"Request processed","operation":"CREATE","data":{"name":"Product 1","expired":"2026-01-15","brand":"BrandA"}}
+{"level":"info","Time":"2024-08-05T10:55:06.572+0700","caller":"producer/main.go:133","msg":"Decoded request data","data":{"name":"Product 1","expired":"2026-01-15","brand":"BrandB"}}
+{"level":"info","Time":"2024-08-05T10:55:07.590+0700","caller":"producer/main.go:104","msg":"Message sent to Kafka","message":"{\"operation\":\"UPDATE\",\"data\":{\"name\":\"Product 1\",\"expired\":\"2026-01-15\",\"brand\":\"BrandB\"}}"}
+{"level":"info","Time":"2024-08-05T10:55:07.591+0700","caller":"producer/main.go:144","msg":"Request processed","operation":"UPDATE","data":{"name":"Product 1","expired":"2026-01-15","brand":"BrandB"}}
+{"level":"info","Time":"2024-08-05T10:59:19.213+0700","caller":"producer/main.go:133","msg":"Decoded request data","data":{"name":"Product 1","expired":"2026-01-15","brand":"BrandC"}}
+{"level":"info","Time":"2024-08-05T10:59:20.220+0700","caller":"producer/main.go:104","msg":"Message sent to Kafka","message":"{\"operation\":\"UPDATE\",\"data\":{\"name\":\"Product 1\",\"expired\":\"2026-01-15\",\"brand\":\"BrandC\"}}"}
+{"level":"info","Time":"2024-08-05T10:59:20.221+0700","caller":"producer/main.go:144","msg":"Request processed","operation":"UPDATE","data":{"name":"Product 1","expired":"2026-01-15","brand":"BrandC"}}
+{"level":"info","Time":"2024-08-05T11:00:55.284+0700","caller":"producer/main.go:133","msg":"Decoded request data","data":{"name":"Product 1","expired":"2026-01-15","brand":"BrandA"}}
+{"level":"info","Time":"2024-08-05T11:00:56.294+0700","caller":"producer/main.go:104","msg":"Message sent to Kafka","message":"{\"operation\":\"UPDATE\",\"data\":{\"name\":\"Product 1\",\"expired\":\"2026-01-15\",\"brand\":\"BrandA\"}}"}
+{"level":"info","Time":"2024-08-05T11:00:56.295+0700","caller":"producer/main.go:144","msg":"Request processed","operation":"UPDATE","data":{"name":"Product 1","expired":"2026-01-15","brand":"BrandA"}}

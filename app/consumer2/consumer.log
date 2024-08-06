@@ -1,0 +1,8 @@
+{"level":"info","Time":"2024-08-05T10:55:07.603+0700","caller":"consumer2/main.go:93","msg":"Received message","GroupID":"cons1","Topic":"GoDev","Partition":1,"Offset":25,"Value":"{\"operation\":\"UPDATE\",\"data\":{\"name\":\"Product 1\",\"expired\":\"2026-01-15\",\"brand\":\"BrandB\"}}"}
+{"level":"info","Time":"2024-08-05T10:55:07.606+0700","caller":"consumer2/main.go:110","msg":"Parsed message","Operation":"UPDATE","Product Name":"Product 1","Expired":"2026-01-15","Brand":"BrandB"}
+{"level":"info","Time":"2024-08-05T10:55:07.899+0700","caller":"consumer2/main.go:151","msg":"Old Data","Data":{"_id":"66b04d028119c1702b5aff04","data":{"brand":"BrandA","expired":"2026-01-15","name":"Product 1"},"operation":"CREATE"}}
+{"level":"info","Time":"2024-08-05T10:55:07.952+0700","caller":"consumer2/main.go:165","msg":"Updated document","Data":{"name":"Product 1","expired":"2026-01-15","brand":"BrandB"}}
+{"level":"info","Time":"2024-08-05T11:00:56.297+0700","caller":"consumer2/main.go:93","msg":"Received message","GroupID":"cons1","Topic":"GoDev","Partition":3,"Offset":18,"Value":"{\"operation\":\"UPDATE\",\"data\":{\"name\":\"Product 1\",\"expired\":\"2026-01-15\",\"brand\":\"BrandA\"}}"}
+{"level":"info","Time":"2024-08-05T11:00:56.299+0700","caller":"consumer2/main.go:110","msg":"Parsed message","Operation":"UPDATE","Product Name":"Product 1","Expired":"2026-01-15","Brand":"BrandA"}
+{"level":"info","Time":"2024-08-05T11:00:56.738+0700","caller":"consumer2/main.go:153","msg":"Old Data","Data":{"name":"Product 1","expired":"2026-01-15","brand":"BrandC"}}
+{"level":"info","Time":"2024-08-05T11:00:56.782+0700","caller":"consumer2/main.go:167","msg":"New Data","Data":{"name":"Product 1","expired":"2026-01-15","brand":"BrandA"}}
