@@ -52,9 +52,10 @@ func initLogger() {
 
 func init() {
 	initLogger()
+	uri := "mongo"
 
 	var err error
-	mongoClient, err = mongo.NewClient(options.Client().ApplyURI("mongodb+srv://bosbesp:Pbkrbs170245@cluster0.nr5ruuc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"))
+	mongoClient, err = mongo.NewClient(options.Client().ApplyURI(uri))
 	if err != nil {
 		logger.Fatal("Failed to create MongoDB client", zap.Error(err))
 	}
