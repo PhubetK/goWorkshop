@@ -4,3 +4,5 @@
 {"level":"info","Time":"2024-08-05T10:59:30.780+0700","caller":"consumer1/main.go:110","msg":"Parsed message","Operation":"UPDATE","Product Name":"Product 1","Expired":"2026-01-15","Brand":"BrandC"}
 {"level":"info","Time":"2024-08-05T10:59:31.118+0700","caller":"consumer1/main.go:153","msg":"Old Data","Data":{"name":"Product 1","expired":"2026-01-15","brand":"BrandB"}}
 {"level":"info","Time":"2024-08-05T10:59:31.188+0700","caller":"consumer1/main.go:167","msg":"Updated document","New Data":{"name":"Product 1","expired":"2026-01-15","brand":"BrandC"}}
+{"level":"info","Time":"2024-08-07T16:49:31.974+0700","caller":"consumer1/main.go:93","msg":"Received message","GroupID":"cons1","Topic":"GoDev","Partition":0,"Offset":0,"Value":"{\"operation\":\"CREATE\",\"data\":{\"name\":\"Product 1\",\"expired\":\"2026-01-15\",\"brand\":\"BrandA\"}}"}
+{"level":"info","Time":"2024-08-07T16:49:31.976+0700","caller":"consumer1/main.go:110","msg":"Parsed message","Operation":"CREATE","Product Name":"Product 1","Expired":"2026-01-15","Brand":"BrandA"}
